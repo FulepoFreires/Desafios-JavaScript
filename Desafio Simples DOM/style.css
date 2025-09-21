@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: 'poppins';
+}
+
+.botao-adicionar{
+  padding: 10px;
+  background-color: rgb(0, 180, 45);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 4px;
+}
+
+.botao-adicionar:hover{
+  background-color: rgb(8, 197, 49);
+}
+
+.container-padrao{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+  min-width: 200px;
+}
+
+.botao-remover{
+  border-radius: 4px;
+  padding: 6px;
+  width: 70px;
+  height: 30px;
+  border: none;
+  justify-content: center;
+  background-color: rgb(253, 49, 34);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  color: #f2f2f2;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.botao-remover:hover{
+  background-color: rgb(165, 29, 19);
+}
+
+.item-container{
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(161, 161, 161);
+  max-width: 400px;
+  background-color: #f2f2f2;
+  min-width: 250px;
+}
