@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizador de Estudos</title>
+</head>
+<body>
+
+  <h1>Organizador de Estudos</h1>
+  
+  <form id="form-topico">
+    <label for="titulo">Tópico: </label>
+    <input type="text" id="titulo" required>
+
+    <label for="dificuldade">Dificuldade (1-5):</label>
+    <input type="number" id="dificuldade" min="1" max="5" required>
+
+    <button type="submit" id="adicionar-btn">Adicionar</button>
+  </form>
+
+  <div id="lista-de-topicos">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
