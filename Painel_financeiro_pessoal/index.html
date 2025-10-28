@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>painel Financeiro</title>
+  </head>
+  <body>
+    <main>
+
+      <h1 class="title">Meu Painel Financeiro</h1>
+      
+      <div id="resumo-financeiro">
+      </div>
+      <form id="form-transacao" class="container-form">
+        <div class="formDesc">
+          <label for="descricao">Descrição:</label>
+          <input type="text" placeholder="Ex: Conta de luz" id="descricao" required />
+        </div>
+        <div class="formValor">
+          <label for="valor">Valor (R$):</label>
+          <input type="number" placeholder="Ex: 80.00" id="valor" step="0.01" required />
+        </div>
+        
+        <div  class="formTipo">
+          <label for="tipo-transacao">Tipo:</label>
+          <select id="tipo-transacao" required>
+            <option value="despesa">Despesa</option>
+            <option value="receita">Receita</option>
+          </select>
+        </div>
+        <button type="submit" class="botaoAdd">Adicionar Transação</button>
+      </form>
+  
+      
+      <div  class="divTable">
+        <table>
+          <tr>
+            <th>Descrição</th>
+            <th class="colunaValor">Valor</th>
+            <th class="colunaTipo">Tipo</th>
+            <th class="colunaAcao"></th>
+          </tr>
+          <tbody id="lista-transacoes">
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

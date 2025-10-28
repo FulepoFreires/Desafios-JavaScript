@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #181819;
+}
+
+main{
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.container-form{
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title{
+  margin: 8rem 0 8rem 0;
+}
+
+.formValor, .formDesc, .formTipo{
+  display: flex;
+  flex-direction: column;
+}
+
+.divTable{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.botaoAdd{
+  padding: 6px;
+  border: none;
+  background: rgb(22, 145, 202);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.botaoAdd:hover{
+  background-color: rgb(14, 179, 255);
+}
+
+.formDesc input, .formValor input{
+  padding: 6px;
+  font-size: 15px;
+  border: none;
+    border-radius: 5px;
+}
+
+.formDesc label, .formValor label{
+  margin: 10px 0 10px 0;
+}
+
+.formTipo select{
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.formTipo label{
+  margin: 10px 0 10px 0;
+}
+
+table{
+  width: 98%;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+th{
+  text-align: start;
+  border-bottom: inset;
+  padding-bottom: 5px;
+  min-width: 100px;
+}
+
+.linhaColuna tr{
+  height: 20px;
+}
+
+td{
+  max-width: 100px;
+}
+.receita {
+  display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: rgba(0, 128, 0, 0.39);
+  color: greenyellow;
+  font-weight: bold;
+}
+
+.despesa {
+  display: flex;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.274);
+  color: rgb(255, 85, 85);
+  font-weight: bold;
+}
+
+.positivo{
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: rgba(0, 128, 0, 0.39);
+  color: greenyellow;
+  font-weight: bold;
+}
+
+.negativo{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.274);
+  color: rgb(255, 85, 85);
+  font-weight: bold;
+}
+
+.neutro{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.274);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.btn-remover {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+#resumo-financeiro{
+  font-size: 1rem;
+}
